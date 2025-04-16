@@ -1,14 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { routes } from "./routes";
+import { JSX } from "react";
 
-import './App.css'
-
-function App() {
-
+function App(): JSX.Element {
   return (
-    <>
-      <h1>SI Scheduler</h1>
-      WIP
-    </>
-  )
+    <Router>
+      <Routes>
+        {routes.map((route) => (
+          <Route 
+            key={route.path} 
+            path={route.path} 
+            element={route.element} 
+          />
+        ))}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
