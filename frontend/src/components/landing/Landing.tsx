@@ -1,4 +1,5 @@
 import React from 'react';
+import LandingHeader from './LandingHeader';
 
 interface LandingProps {
     // Define your props here if needed
@@ -8,9 +9,12 @@ interface LandingProps {
 
 const Landing: React.FC<LandingProps> = () => {
     return (
-        <div className="landing-page">
-            test
-        </div>
+        <>
+            <LandingHeader />
+            <div>
+                test
+            </div>
+        </>
     );
 };
 
