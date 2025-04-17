@@ -4,25 +4,26 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
 
   .landing-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #a13927;
+    background-color: #488B49;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
   }
   
 
-  .landing-header img {
+  .landing-header svg {
     height: 40px;
     width: auto;
     transition: transform 0.3s ease;
+    fill: white;
   }
-  
-  .landing-header img:hover {
+  .landing-header svg:hover {
     transform: scale(1.05);
     cursor: pointer;
   }
@@ -36,8 +37,8 @@ body {
 
   .header-button {
     padding: 0.6rem 1.5rem;
-    background-color: #3a86ff;
-    color: white;
+    background-color: white;
+    color: #0E131F;
     border: none;
     border-radius: 6px;
     font-size: 0.9rem;
@@ -47,7 +48,7 @@ body {
   }
   
   .header-button:hover {
-    background-color: #2667d6;
+    background-color: #CCDBFF;
     transform: translateY(-1px);
   }
   
