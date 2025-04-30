@@ -1,69 +1,58 @@
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .landing-header {
+.landing-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #488B49;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
-  }
-  
+    z-index: 100;
+    flex-wrap: wrap;
+    background: rgba(00,120,203, 0.7);
+}
 
-  .landing-header svg {
-    height: 40px;
-    width: auto;
-    transition: transform 0.3s ease;
-    fill: white;
-  }
-  .landing-header svg:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-  
+.landing-header > div:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
 
-  .header-buttons {
+.header-buttons {
     display: flex;
     gap: 1rem;
-  }
-  
+    flex-wrap: wrap;
+}
 
-  .header-button {
-    padding: 0.6rem 1.5rem;
-    background-color: white;
-    color: #0E131F;
+.header-button {
+    background: none;
     border: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .header-button:hover {
-    background-color: #CCDBFF;
-    transform: translateY(-1px);
-  }
-  
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
 
-  @media (max-width: 768px) {
+.header-button:hover {
+    background-color: rgb(00,120,203);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
     .landing-header {
-      padding: 0.8rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
-    .landing-header img {
-      height: 32px;
+
+    .header-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
-    
+
     .header-button {
-      padding: 0.5rem 1.2rem;
-      font-size: 0.8rem;
+        width: 100%;
+        text-align: left;
     }
-  }
+}

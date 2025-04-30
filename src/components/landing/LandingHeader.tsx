@@ -1,27 +1,43 @@
-import { useNavigate } from "react-router-dom";
 import "./Landing.css"
 
 const LandingHeader = () => {
-    const navigate = useNavigate();
-
-    const handleSignIn = () => {
-        navigate("/signup")
+    const buttons = {
+        Home: "home",
+        About: "about",
+        Projects: "projects",
+        Skills: "skills",
+        Contact: "contact",
     };
 
-    const handleHome = () => {
-        navigate("/home")
+    const scrollToSection = (id: string) => {
+        if (id === "home") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
     };
 
     return (
         <header className="landing-header">
-            <svg onClick={handleHome} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>
+            <div className="">
+                Mark Garcia
+            </div>
             <div className="header-buttons">
-                <button className="header-button" onClick={handleSignIn}>
-                    Sign In
-                </button>
+                {Object.entries(buttons).map(([label, id]) => (
+                    <button
+                        key={label}
+                        className="header-button"
+                        onClick={() => scrollToSection(id)}
+                    >
+                        {label}
+                    </button>
+                ))}
             </div>
         </header>
-    )
+    );
 };
 
 export default LandingHeader;
