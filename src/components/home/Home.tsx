@@ -5,7 +5,7 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
     return (
-        <section id="Home" className="Home-section">
+        <section id="home" className="Home-section">
             <div className="Home-content">
                 <div className="Home-text">
                     <h1 className="Home-title">👋 Hi, I'm <span className="highlight">Mark :)</span></h1>
