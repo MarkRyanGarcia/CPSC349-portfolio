@@ -1,9 +1,9 @@
 import { JSX } from "react";
-import Header from '/src/components/header/Header';
-import Waves from '/src/components/waves/Waves';
-import Home from '/src/components/home/Home';
-import About from '/src/components/about/About';
-import Projects from '/src/components/projects/Projects';
+import Header from './components/header/Header';
+import Waves from './components/waves/Waves';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
 import "./App.css"
 
 function App(): JSX.Element {
