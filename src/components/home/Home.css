@@ -1,10 +1,10 @@
-.About-section {
+.Home-section {
     padding: 4rem 2rem;
     /* background-color: #f9f9f9; */
     scroll-margin-top: 100px;
 }
 
-.About-content {
+.Home-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,33 +14,33 @@
     flex-wrap: wrap;
 }
 
-.About-text {
+.Home-text {
     flex: 1;
     min-width: 300px;
 }
 
-.About-title {
+.Home-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.About-intro {
+.Home-intro {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-.About-description {
+.Home-description {
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.About-list {
+.Home-list {
     list-style: none;
     padding-left: 0;
 }
 
-.About-list li {
+.Home-list li {
     font-size: 1rem;
     margin-bottom: 0.75rem;
 }
@@ -50,7 +50,7 @@
     color: #007acc;
 }
 
-.About-image-container {
+.Home-image-container {
     flex-shrink: 0;
     width: 300px;
     height: 300px;
@@ -60,7 +60,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.About-image {
+.Home-image {
     width: 100%;
     height: 100%;
     object-fit: cover;

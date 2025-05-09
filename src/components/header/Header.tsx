@@ -1,6 +1,6 @@
-import "./Landing.css"
+import "./Header.css"
 
-const LandingHeader = () => {
+const Header = () => {
     const buttons = {
         Home: "home",
         About: "about",
@@ -21,7 +21,7 @@ const LandingHeader = () => {
     };
 
     return (
-        <header className="landing-header">
+        <header className="header">
             <div className="">
                 Mark Garcia
             </div>
@@ -40,4 +40,4 @@ const LandingHeader = () => {
     );
 };
 
-export default LandingHeader;
+export default Header;
