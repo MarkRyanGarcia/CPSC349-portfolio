@@ -8,8 +8,8 @@ const Header = () => {
         Home: "home",
         About: "about",
         Projects: "projects",
-        Skills: "skills",
-        Contact: "contact",
+        // Skills: "skills",
+        // Contact: "contact",
     };
 
     useEffect(() => {
