@@ -10,7 +10,7 @@ interface WavesProps {
 
 const Waves: React.FC<WavesProps> = ({
   name = "Mark Garcia",
-  imageUrl = "/src/assets/mark2.png",
+  imageUrl = "./images/mark2.png",
   bottomText = "Made with 💗 by Markypoo",
   description = "An undergraduate student at CSU Fullerton | CS Major, Math Minor"
 }) => {

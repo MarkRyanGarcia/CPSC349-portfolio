@@ -21,7 +21,7 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
                 <div className="Home-image-container">
                     <img
-                        src="/src/assets/mark.png"
+                        src="./images/mark.png"
                         alt="Mark Garcia"
                         className="Home-image"
                     />

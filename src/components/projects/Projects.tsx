@@ -24,17 +24,17 @@ const Projects: React.FC = () => {
       href: 'https://markg.dev/',
       images: [
         {
-          src: "/src/assets/ProjectImages/porf.png",
+          src: "./ProjectImages/porf.png",
           alt: "Portfolio Top Screenshot",
           width: "400px",
         },
         {
-          src: "/src/assets/ProjectImages/porf2.png",
+          src: "./ProjectImages/porf2.png",
           alt: "Portfolio About Me Screenshot",
           width: "400px",
         },
         {
-          src: "/src/assets/ProjectImages/porf3.png",
+          src: "./ProjectImages/porf3.png",
           alt: "Portfolio Projects Screenshot",
           width: "400px",
         }
@@ -47,12 +47,12 @@ const Projects: React.FC = () => {
         href: 'https://marktris.markg.dev/',
         images: [
             {
-            src: "/src/assets/ProjectImages/TitleScreen.png",
+            src: "./ProjectImages/TitleScreen.png",
             alt: "Tetris Title Screen Screenshot",
             width: "400px",
             },
             {
-            src: "/src/assets/ProjectImages/marktrisscreenshot2.png",
+            src: "./ProjectImages/marktrisscreenshot2.png",
             alt: "Tetris Project Screenshot",
             width: "400px",
             }
@@ -65,12 +65,12 @@ const Projects: React.FC = () => {
         href: 'https://jowen-ster.github.io/FULLYHACKS_NEONCHAT/',
         images: [
             {
-            src: "/src/assets/ProjectImages/neonchat1.png",
+            src: "./ProjectImages/neonchat1.png",
             alt: "NeonChat Home Screen",
             width: "330px",
             },
             {
-            src: "/src/assets/ProjectImages/neonchat2.png",
+            src: "./ProjectImages/neonchat2.png",
             alt: "NeonChat Message Screen",
             width: "300px",
             }
@@ -83,12 +83,12 @@ const Projects: React.FC = () => {
         href: 'https://github.com/MarkRyanGarcia/Doodle-Jump-Gamedev-SP25',
         images: [
             {
-            src: "/src/assets/ProjectImages/doodlejump1.png",
+            src: "./ProjectImages/doodlejump1.png",
             alt: "Doodlejump Presentation Cover Slide Screenshot",
             width: "320px",
             },
             {
-            src: "/src/assets/ProjectImages/doodlejump2.png",
+            src: "./ProjectImages/doodlejump2.png",
             alt: "DoodleJump Unity Screenshot",
             width: "320px",
             }
@@ -101,12 +101,12 @@ const Projects: React.FC = () => {
         href: 'https://marktris-react.markg.dev/',
         images: [
             {
-            src: "/src/assets/ProjectImages/marktrisreact1.png",
+            src: "./ProjectImages/marktrisreact1.png",
             alt: "Marktris empty board screenshot",
             width: "420px",
             },
             {
-            src: "/src/assets/ProjectImages/marktrisreact2.png",
+            src: "./ProjectImages/marktrisreact2.png",
             alt: "Marktris Gameplay Screenshot",
             width: "420px",
             }
@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
             Projects
         </h1>
         <p className="about-tagline">A list of projects that I may or may not still be working on</p>
-        
+
         <div className="project-container">
             {projectList.map((project, index) => (
             <div 
