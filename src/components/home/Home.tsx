@@ -12,9 +12,6 @@ const Home: React.FC<HomeProps> = () => {
                     <p className="Home-intro">
                         An undergraduate student at <span className="highlight">CSU Fullerton 🐘</span> | CS Major, Math Minor
                     </p>
-                    <p className="Home-description">
-                        I'm a full-time student while working two jobs, but I'm still trying to find time to work on projects! 😄
-                    </p>
                     <ul className="Home-list">
                         <li>📷 <span className="highlight">Marketing Team Lead</span> for ACM at CSUF</li>
                         <li>📐 <span className="highlight">Supplemental Instructor</span> for Calculus II (because Math is just so fun!)</li>
