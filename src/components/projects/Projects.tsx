@@ -85,7 +85,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Marktris React",
-      description: "Remake of Marktris Godot export in react because it was very slow. Still WIP",
+      description: "Remake of Marktris Godot export in react because it was very slow. Made during downtime while organizing FullyHacks 2025",
       alt: 'Marktris in React',
       href: 'https://marktris-react.markg.dev/',
       images: [
