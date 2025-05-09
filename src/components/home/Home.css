@@ -20,6 +20,7 @@
 }
 
 .Home-title {
+    color: black;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -43,6 +44,7 @@
 .Home-list li {
     font-size: 1rem;
     margin-bottom: 0.75rem;
+    color: black;
 }
 
 .highlight {
