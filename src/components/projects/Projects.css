@@ -16,7 +16,132 @@
 
 .projects-main-title {
     font-size: 2.8rem;
+    margin-bottom: 1rem;a/* New responsive layout styles */
+.projects-section {
+    background-color: #f8f8f8;
+    padding: 4rem 2rem;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-main-title {
+    font-size: 2.8rem;
     margin-bottom: 1rem;
+    color: #222;
+}
+
+.highlight {
+    color: #1C86BE;
+}
+
+.projects-tagline {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    max-width: 900px; /* Limits to 2 columns */
+    margin: 0 auto; /* Center the grid */
+    gap: 2rem;
+}
+
+/* Original card styles with responsive adjustments */
+.project-card {
+    border: 10px solid #CFD6E7;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%; /* Ensure equal height */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card:focus {
+    outline: 2px solid white;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.project-description {
+    color: white;
+    text-align: center;
+    margin: 0.5rem 0 1.5rem;
+    line-height: 1.5;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .projects-grid {
+        max-width: 100%; /* Allow full width on smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-main-title {
+        font-size: 2.2rem;
+    }
+    
+    .project-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section {
+        padding: 3rem 1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+}
     color: #222;
 }
 
