@@ -328,6 +328,7 @@
     background-color: #156a9c;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(28, 134, 190, 0.4);
+    color: white;
   }
   
   .download-icon {
