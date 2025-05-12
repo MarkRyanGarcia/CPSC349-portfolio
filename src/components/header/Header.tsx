@@ -8,7 +8,7 @@ const Header = () => {
         Home: "home",
         About: "about",
         Projects: "projects",
-        // Skills: "skills",
+        Skills: "skills",
         // Contact: "contact",
     };
 

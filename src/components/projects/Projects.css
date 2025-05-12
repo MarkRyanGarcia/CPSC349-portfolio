@@ -16,7 +16,10 @@
 
 .projects-main-title {
     font-size: 2.8rem;
-    margin-bottom: 1rem;a/* New responsive layout styles */
+    margin-bottom: 1rem;
+    color: #222222;
+}
+    
 .projects-section {
     background-color: #f8f8f8;
     padding: 4rem 2rem;
@@ -51,8 +54,8 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: 900px; /* Limits to 2 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px; /* Limits to 2 columns */
     margin: 0 auto; /* Center the grid */
     gap: 2rem;
 }
@@ -141,8 +144,6 @@
     .project-card {
         max-width: 100%;
     }
-}
-    color: #222;
 }
 
 .projects-highlight {
