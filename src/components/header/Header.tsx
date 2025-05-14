@@ -9,7 +9,7 @@ const Header = () => {
         About: "about",
         Projects: "projects",
         Skills: "skills",
-        // Contact: "contact",
+        Contact: "contact",
     };
 
     useEffect(() => {
