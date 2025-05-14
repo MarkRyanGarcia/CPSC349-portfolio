@@ -10,7 +10,7 @@ const Skills: React.FC<SkillsProps> = () => {
         <div className='skills-header'>
         <h1 className="skills-title">My <span className="highlight">Skills</span></h1>
         <p className="skills-tagline">
-            A collection of my recent work and personal projects
+            A collection of my skills
         </p>
         </div>
         
