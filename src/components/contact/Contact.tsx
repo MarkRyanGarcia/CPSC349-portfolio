@@ -37,65 +37,67 @@ const Contact: React.FC = () => {
     });
 
     return (
-    <div className="contact-container">
-        <h1 className="contact-title">Contact</h1>
-        
-        <div className="contact-form">
-        {result && (
-            <div className={`submit-status ${
-            isSuccess ? 'success' : 
-            isSubmitting ? 'sending' : 
-            'error'}`}>
-            {result}
-            </div>
-        )}
-        
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input
-                type="text"
-                id="name"
-                className="form-input"
-                placeholder="Your name"
-                {...register("name", { required: true })}
-            />
-            </div>
+    <section id="contact">
+        <div className="contact-container">
+            <h1 className="contact-title">Contact</h1>
             
-            <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-                type="email"
-                id="email"
-                className="form-input"
-                placeholder="your.email@example.com"
-                {...register("email", { required: true })}
-            />
+            <div className="contact-form">
+            {result && (
+                <div className={`submit-status ${
+                isSuccess ? 'success' : 
+                isSubmitting ? 'sending' : 
+                'error'}`}>
+                {result}
+                </div>
+            )}
+            
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    className="form-input"
+                    placeholder="Your name"
+                    {...register("name", { required: true })}
+                />
+                </div>
+                
+                <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    className="form-input"
+                    placeholder="your.email@example.com"
+                    {...register("email", { required: true })}
+                />
+                </div>
+                
+                <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                    id="message"
+                    className="form-textarea"
+                    placeholder="Your message here..."
+                    rows={5}
+                    {...register("message", { required: true })}
+                />
+                </div>
+                
+                <input type="hidden" name="redirect" value="false" />
+                
+                <button 
+                type="submit" 
+                disabled={isSubmitting} 
+                className="submit-btn"
+                >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+            </form>
             </div>
-            
-            <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-                id="message"
-                className="form-textarea"
-                placeholder="Your message here..."
-                rows={5}
-                {...register("message", { required: true })}
-            />
-            </div>
-            
-            <input type="hidden" name="redirect" value="false" />
-            
-            <button 
-            type="submit" 
-            disabled={isSubmitting} 
-            className="submit-btn"
-            >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
-            </button>
-        </form>
         </div>
-    </div>
+    </section>
     );
 };
 
