@@ -20,7 +20,7 @@ const Waves: React.FC<WavesProps> = ({
         {/* Waves waves-header Content */}
         <div className="inner-waves-header flex">
           <img className="circle-image" src={imageUrl} alt="Profile Pic" />
-          <h1 id="name">{name}</h1>
+          <h1 id="waves-name">{name}</h1>
           <p className="waves-description">{description}</p>
         </div>
 
