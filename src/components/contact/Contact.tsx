@@ -23,13 +23,13 @@ const Contact: React.FC = () => {
         from_name: "Website Contact Form",
         subject: "New Message from Your Website",
     },
-    onSuccess: (msg: string, data: any) => {
+    onSuccess: (msg: string) => {
         setIsSuccess(true);
         setResult(msg);
         reset();
         setIsSubmitting(false);
     },
-    onError: (msg: string, data: any) => {
+    onError: (msg: string) => {
         setIsSuccess(false);
         setResult(msg);
         setIsSubmitting(false);
