@@ -77,6 +77,7 @@ CPSC349-portfolio/
 
 The project is deployed using [Vercel](https://vercel.com):
 
+Click Here to View:
 [![Live Demo](https://img.shields.io/badge/Live_Demo-View_Portfolio-brightgreen)](https://markg.dev/)
 
 ## 📝 License
