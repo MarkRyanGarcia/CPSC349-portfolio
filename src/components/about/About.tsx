@@ -174,7 +174,7 @@ const About: React.FC<AboutProps> = () => {
                                 Visit my complete resume to view my full professional background, skills, and achievements.
                             </p>
                             <a 
-                                href="https://drive.google.com/file/d/1enBVVC-l8nc3DttrY6mRt-jK4pTvLOLW/view?usp=sharing" 
+                                href="https://github.com/MarkRyanGarcia/Resume/blob/main/resume.pdf" 
                                 target="_blank"
                                 className="resume-download-button"
                             >
