@@ -2,9 +2,9 @@ import { JSX } from "react";
 import Header from './components/header/Header';
 import Waves from './components/waves/Waves';
 import Home from './components/home/Home';
-import About from './components/about/About';
+// import About from './components/about/About';
 import Projects from './components/projects/Projects';
-import Skills from './components/skills/Skills';
+// import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import "./App.css"
@@ -15,9 +15,9 @@ function App(): JSX.Element {
         <Header />
         <Waves />
         <Home />
-        <About />
+        {/* <About /> */}
         <Projects />
-        <Skills />
+        {/* <Skills /> */}
         <Contact />
         <Footer />
     </>
